@@ -53,7 +53,7 @@ export class BlockchainMessageService {
     const jsonPayload = JSON.stringify(messagePayload);
     if (useBlockchainSecureMessage) {
       const recipientPublicKey = PublicAccount.createFromPublicKey(recipientPublicKeyRaw!, this.networkType);
-      console.log(recipientAddress);
+      //console.log(recipientAddress);
       return EncryptedMessage.create(
         jsonPayload,
         recipientPublicKey,
